@@ -1,16 +1,28 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  @apply font-mulish;
+}
+
+body {
+  @apply bg-dark;
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1300px] px-6;
+  }
+  .title_md {
+    @apply text-[50px] leading-[62px] font-black text-white;
+  }
+  .body_text {
+    @apply text-[18px] leading-[32px] text-white/80 font-medium;
+  }
+  .__button {
+    @apply bg-primary text-black rounded-lg px-9 py-[20px] text-xl mt-[60px] outline-none font-semibold;
+  }
 }
