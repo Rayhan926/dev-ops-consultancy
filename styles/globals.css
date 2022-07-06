@@ -25,4 +25,7 @@ body {
   .__button {
     @apply bg-primary text-black rounded-lg px-9 py-[20px] text-xl mt-[60px] outline-none font-semibold;
   }
+  .__input {
+    @apply px-5 py-4 outline-none border border-white/20 focus:border-white/40 bg-white/10 text-lg placeholder:text-white/50 text-white block w-full;
+  }
 }
