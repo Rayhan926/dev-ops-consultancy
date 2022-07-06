@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section>
+    <section id="contact">
       <div className="container">
         <div className="grid grid-cols-[500px,auto] gap-[120px]">
           <div>

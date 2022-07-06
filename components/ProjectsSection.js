@@ -26,13 +26,13 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section>
+    <section id="projects">
       <div className="container">
         <h2 className="title_md text-center">
           Our <span className="text-primary">Projects</span>
         </h2>
 
-        <div className="mt-[100px] grid grid-cols-2 gap-[30px]">
+        <div className="mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
           {projects.map(
             ({ projectImgSrc, projectLogoSrc, shortDescription }, i) => (
               <div key={i} className="bg-white/5 rounded-[20px] p-10 pb-0">

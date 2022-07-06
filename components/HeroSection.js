@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center">
+    <section
+      className="min-h-screen flex flex-col justify-center !mt-10"
+      id="home"
+    >
       <div className="container">
         <div className="grid grid-cols-[45%,55%] gap-5">
           <div className="flex flex-col justify-center">
@@ -16,7 +19,7 @@ const HeroSection = () => {
               efficiency, accuracy, faster, and more frequently.
             </p>
             <div>
-              <button className="__button">Work with us</button>
+              <button className="__button mt-[60px]">Work with us</button>
             </div>
           </div>
           <div>

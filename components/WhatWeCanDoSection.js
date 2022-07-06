@@ -47,15 +47,15 @@ const services = [
 
 const WhatWeCanDoSection = () => {
   return (
-    <section>
+    <section id="what-we-do">
       <div className="container">
         <h2 className="title_md text-center">
           What We <span className="text-primary">Can Do</span>
         </h2>
 
-        <div className="grid grid-cols-3 gap-x-[30px] gap-y-[60px] mt-[100px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-7 xl:gap-x-[30px] xl:gap-y-[60px] mt-[100px]">
           {services.map(({ icon, description, title }, i) => (
-            <div className="rounded-[16px] bg-white/5 px-[30px] py-10">
+            <div key={i} className="rounded-[16px] bg-white/5 px-[30px] py-10">
               <div className="w-20 h-20 flex items-center justify-center bg-primary/10 rounded-full">
                 {icon}
               </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section>
+    <section id="about-us">
       <div className="container">
         <div className="grid grid-cols-2 gap-20">
           <div>
@@ -26,9 +26,7 @@ const AboutSection = () => {
               About Our <span className="text-primary">DevOps</span> Consultancy
             </h2>
             <p className="body_text mt-[30px]">
-              <span className="font-semibold text-primary">
-                DevOps Consultancy
-              </span>{" "}
+              <span className="font-bold text-primary">DevOps Consultancy</span>{" "}
               is a deeply credentialed, award-winning provider of AWS and DevOps
               consulting and implementation services. We are an integrated team
               of skilled engineers, architects, developers, project managers,
