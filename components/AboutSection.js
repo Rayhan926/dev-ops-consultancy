@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section id="about-us">
       <div className="container">
-        <div className="grid grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20">
           <div>
             <div className="relative">
               <Image
@@ -13,6 +13,7 @@ const AboutSection = () => {
                 width={575}
                 height={431}
                 className="relative z-[2]"
+                alt="About"
               />
               <img
                 src="/img/light.png"

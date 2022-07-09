@@ -32,21 +32,26 @@ const ProjectsSection = () => {
           Our <span className="text-primary">Projects</span>
         </h2>
 
-        <div className="mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+        <div className="mt-[50px] lg:mt-[100px] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-[30px]">
           {projects.map(
             ({ projectImgSrc, projectLogoSrc, shortDescription }, i) => (
-              <div key={i} className="bg-white/5 rounded-[20px] p-10 pb-0">
+              <div
+                key={i}
+                className="bg-white/5 rounded-[20px] px-4 p-[30px] lg:p-10 lg:pb-0"
+              >
                 <div className="flex flex-col items-center text-center">
-                  <Image
-                    src={projectLogoSrc}
-                    width={250}
-                    height={60}
-                    alt="Project Logo"
-                  />
-                  <p className="body_text mt-4">{shortDescription}</p>
+                  <div className="max-w-[122px] lg:max-w-[250px]">
+                    <Image
+                      src={projectLogoSrc}
+                      width={250}
+                      height={60}
+                      alt="Project Logo"
+                    />
+                  </div>
+                  <p className="body_text mt-2 lg:mt-4">{shortDescription}</p>
                 </div>
 
-                <div className="mt-[60px] overflow-hidden rounded-t-[16px]">
+                <div className="mt-10 lg:mt-[60px] overflow-hidden rounded-t-[16px]">
                   <Image
                     layout="responsive"
                     src={projectImgSrc}

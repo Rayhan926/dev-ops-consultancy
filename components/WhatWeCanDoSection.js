@@ -53,13 +53,16 @@ const WhatWeCanDoSection = () => {
           What We <span className="text-primary">Can Do</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-7 xl:gap-x-[30px] xl:gap-y-[60px] mt-[100px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 xl:gap-x-[30px] xl:gap-y-[60px] mt-[50px] lg:mt-[100px]">
           {services.map(({ icon, description, title }, i) => (
-            <div key={i} className="rounded-[16px] bg-white/5 px-[30px] py-10">
-              <div className="w-20 h-20 flex items-center justify-center bg-primary/10 rounded-full">
-                {icon}
+            <div
+              key={i}
+              className="rounded-[16px] bg-white/5 px-5 py-6 lg:px-[30px] lg:py-10"
+            >
+              <div className="w-[60px] h-[60px] lg:w-20 lg:h-20 flex items-center justify-center bg-primary/10 rounded-full">
+                <span className="scale-[0.7] lg:scale-100">{icon}</span>
               </div>
-              <h4 className="text-[24px] leading-[34px] font-black text-white mb-3 mt-6">
+              <h4 className="text-[20px] leading-[30px] lg:text-[24px] lg:leading-[34px] font-black text-white mb-3 mt-6">
                 {title}
               </h4>
               <p className="body_text">{description}</p>

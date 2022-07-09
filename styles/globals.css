@@ -14,19 +14,22 @@ body {
 html {
   @apply scroll-smooth;
 }
+#__next {
+  @apply max-w-[100vw] overflow-hidden;
+}
 
 @layer components {
   .container {
     @apply mx-auto max-w-[1300px] px-6;
   }
   .title_md {
-    @apply text-[50px] leading-[62px] font-black text-white;
+    @apply text-[30px] leading-[37px] lg:text-[50px] lg:leading-[62px] font-black text-white;
   }
   .body_text {
-    @apply text-[18px] leading-[32px] text-white/80 font-medium;
+    @apply text-[16px] leading-[24px] lg:text-[18px] lg:leading-[32px] text-white/80 font-medium;
   }
   .__button {
-    @apply bg-primary hover:bg-[#F5CA31] duration-150 text-black rounded-lg px-9 py-[20px] text-xl outline-none font-semibold;
+    @apply bg-primary hover:bg-[#F5CA31] duration-150 text-black rounded-lg py-3 px-6 lg:px-9 lg:py-[20px] text-base lg:text-xl outline-none font-semibold;
   }
   .__input {
     @apply px-5 py-4 outline-none border border-white/20 focus:border-white/40 bg-white/10 text-lg placeholder:text-white/50 text-white block w-full;

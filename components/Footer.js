@@ -24,20 +24,22 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#101217] py-[83px]">
+    <footer className="bg-[#101217] py-[50px] lg:py-[83px]">
       <div className="container">
-        <div className="flex items-center justify-between">
-          <SiteLogo />
+        <div className="flex items-center flex-col lg:flex-row gap-y-8 gap-x-5 flex-wrap justify-between">
+          <div className="max-w-[130px] lg:max-w-full">
+            <SiteLogo />
+          </div>
           <div className="flex items-center gap-3">
             {socialIcons.map((socialIcon, i) => (
               <a
                 href={socialIcon.link}
                 target="_blank"
                 rel="noreferrer"
-                className="w-14 h-14 rounded-full flex items-center justify-center bg-white/30 text-white hover:bg-primary hover:text-dark duration-150"
+                className="w-11 lg:w-14 h-11 lg:h-14 rounded-full flex items-center justify-center bg-white/30 text-white hover:bg-primary hover:text-dark duration-150"
                 key={i}
               >
-                {socialIcon.icon}
+                <div className="scale-90 lg:scale-100">{socialIcon.icon}</div>
               </a>
             ))}
           </div>

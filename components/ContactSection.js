@@ -5,15 +5,15 @@ const ContactSection = () => {
   return (
     <section id="contact">
       <div className="container">
-        <div className="grid grid-cols-[500px,auto] gap-[120px]">
+        <div className="grid grid-cols-1 lg:grid-cols-[500px,auto] lg:gap-[120px]">
           <div>
             <h2 className="title_md">
               <span className="text-primary">Contact</span> Us
             </h2>
-            <p className="body_text mt-6">
+            <p className="body_text mt-2 lg:mt-6 max-w-[60%] lg:max-w-full">
               Schedule a free DevOps assessment session
             </p>
-            <form className="mt-[50px] space-y-4 max-w-[445px]">
+            <form className="mt-8 lg:mt-[50px] space-y-3 lg:space-y-4 lg:max-w-[445px]">
               <input type="text" className="__input" placeholder="Name*" />
               <input type="email" className="__input" placeholder="Email*" />
               <textarea
@@ -22,13 +22,13 @@ const ContactSection = () => {
                 placeholder="How we can help you?*"
               ></textarea>
 
-              <button type="submit" className="__button !mt-6">
+              <button type="submit" className="__button !mt-4 lg:!mt-6">
                 Let’s Chat
               </button>
             </form>
           </div>
 
-          <div>
+          <div className="hidden lg:block">
             <div className="scale-[1.25] origin-top-right">
               <Image
                 src="/img/contact_img.png"

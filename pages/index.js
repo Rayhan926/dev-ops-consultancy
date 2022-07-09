@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>DevOps Consultancy</title>
       </Head>
-      <div className="space-y-[200px] [&>section]:scroll-mt-[150px]">
+      <div className="space-y-[90px] lg:space-y-[200px] [&>section]:scroll-mt-[120px] lg:[&>section]:scroll-mt-[150px]">
         <Header />
         <HeroSection />
         <AboutSection />
